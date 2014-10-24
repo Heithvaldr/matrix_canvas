@@ -1,12 +1,13 @@
 var matrix = document.getElementById("matrix"),
     context = matrix.getContext("2d"),
-    ukrainian = "ÀÁÂÃÄÅªÆÇÈ²¯ÉÊËÌÍÎÏĞÑÒÓÔÕÖ×ØÙÜŞß",
-    font_size = 15,
-    columns = matrix.width/font_size,
+    ukrainian = "ĞĞ‘Ğ’Ğ“Ğ”Ğ•Ğ„Ğ–Ğ—Ğ˜Ğ†Ğ‡Ğ™ĞšĞ›ĞœĞĞĞŸĞ Ğ¡Ğ¢Ğ£Ğ¤Ğ¥Ğ¦Ğ§Ğ¨Ğ©Ğ¬Ğ®Ğ¯",
+    font_size = 17,
     drops = [];
         
 matrix.height = window.innerHeight;
 matrix.width = window.innerWidth;
+
+var columns = matrix.width/font_size;
 
 ukrainian = ukrainian.split("");
 
@@ -32,4 +33,4 @@ function draw()
 	}
 }
 
-setInterval(draw, 45);
+setInterval(draw, 27);
